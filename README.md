@@ -52,4 +52,3 @@
 - 留言数据表：t_message
 - 协同维护数据表：t_friend
 - 相册数据表：t_picture
-# yeyeyey
