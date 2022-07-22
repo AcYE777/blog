@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yeblog?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 007
+
+logging:
+  level:
+    root: info
+    com.gy: debug
+  file: log/blog-dev.log
+
+mybatis:
+  type-aliases-package: com.gy.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true # mybatis的map-underscore-to-camel-case参数设置为true时，可以将数据库的带下划线“”给去掉然后映射到实体类的属性上去。
+
+
